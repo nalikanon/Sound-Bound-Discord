@@ -7,6 +7,6 @@ TOKEN = 'MTM4ODgyOTc3MzAzNTIwODc3Ng.G9kK5M.7IUnU2pmetfVTQDaFYzZsegRfOTSYXjgkHv6-
 
 @bot.event
 async def on_ready():
-    print('Bot Online')
+    print("Bot Online")
 
 bot.run(TOKEN)
