@@ -1,16 +1,12 @@
-# This is a sample Python script.
+import discord
+from discord.ext import commands
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+bot = commands.Bot(command_prefix="/", intents=discord.Intents.all())
 
+TOKEN = 'MTM4ODgyOTc3MzAzNTIwODc3Ng.G9kK5M.7IUnU2pmetfVTQDaFYzZsegRfOTSYXjgkHv6-s'
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+@bot.event
+async def on_ready():
+    print('Bot Online')
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+bot.run(TOKEN)
